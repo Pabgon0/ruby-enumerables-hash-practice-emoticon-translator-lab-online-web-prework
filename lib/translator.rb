@@ -15,7 +15,7 @@ end
 
 def get_japanese_emoticon(file, emote)
   call = load_library(file)
-  final = emotes_hash["get_emoticon"][emote]
+  final = call["get_emoticon"][emote]
 end
 
 def get_english_meaning(file, emote)
