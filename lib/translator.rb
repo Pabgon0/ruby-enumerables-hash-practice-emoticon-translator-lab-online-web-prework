@@ -17,7 +17,7 @@ def get_japanese_emoticon(file, emote)
   call = load_library(file)
   final = call["get_emoticon"][emote]
   if final == nil
-    puts "Sorry, that emoticon was not found"
+    final = "Sorry, that emoticon was not found"
   end
   final
 end
@@ -26,7 +26,7 @@ def get_english_meaning(file, emote)
   call = load_library(file)
   final = call["get_meaning"][emote]
   if final == nil
-    puts "Sorry, that emoticon was not found"
+    final = "Sorry, that emoticon was not found"
   end
   final
 end
