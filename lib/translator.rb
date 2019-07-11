@@ -16,7 +16,7 @@ end
 def get_japanese_emoticon(file, emote)
   call = load_library(file)
   final = call["get_emoticon"][emote]
-  if final == false
+  if final == NIL
     puts "Sorry, that emoticon was not found"
   end
   final
